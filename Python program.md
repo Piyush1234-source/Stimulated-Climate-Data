@@ -125,7 +125,7 @@
 function generateClimateData(year) {
     // Seed random number generator with year for reproducibility
     const random = Math.sin(year * 0.1) * 10000;
-    const temperature = (random % 25 + 10);  // Temperature between 10°C and 35°C
+    const temperature = (random % 25 + 10);  // Temperature between 10Â°C and 35Â°C
     const rainfall = (random % 1300 + 200);  // Rainfall between 200mm and 1500mm
     const humidity = (random % 60 + 30);  // Humidity between 30% and 90%
 
@@ -207,7 +207,7 @@ function generateData() {
             labels: years,
             datasets: [
                 {
-                    label: 'Temperature (°C)',
+                    label: 'Temperature (Â°C)',
                     data: temperatures,
                     borderColor: 'red',
                     fill: false,
